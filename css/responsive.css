@@ -1,0 +1,20 @@
+@media (max-width: 60em){
+  .column-6{
+    width: 100%;
+  }
+  .column-4{
+    width:83.33%;
+  }
+}
+@media (max-width: 45em){
+  .header > .column-2,
+  .column-4{
+    width:100%;
+  }
+}
+@media (max-width: 30em){
+  .column-2,
+  .column-8{
+    width:100%;
+  }
+}
