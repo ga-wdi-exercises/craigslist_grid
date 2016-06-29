@@ -1,6 +1,66 @@
-*{ box-sizing:border-box; }
+/* By default, box-sizing is set to content-box */
+.row, .column {
+  /*box-sizing: border-box;*/
+}
 
-.column-1 { width: 8.333%; }
+/* Let's add a border so we can see our rows better */
+.row {
+  border: 2px solid rebeccapurple;
+}
+
+/* clearfix */
+.row:after {
+  /*content: "";
+  display: table;
+  clear: both;*/
+}
+
+/* Let's add another border so we can see our columns better */
+.column {
+  position: relative;
+  border: 2px solid tomato;
+  float: left;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.column .column {
+  border: 2px solid springgreen;
+}
+
+.header > .column,
+.footer > .column {
+  /*padding: 25px;*/
+}
+
+.middle > .column {
+  /*height: 400px;
+  line-height: 400px;*/
+}
+
+.header ul {
+  margin: auto;
+}
+
+.header li {
+  /*display: inline-block;*/
+  list-style-type: none;
+}
+
+.module {
+  /* Let's add a background color to our modules so they're clearly visible.*/
+  background: lightblue;
+
+  /* Now let's give our modules a left and right margin of 10px */
+  margin: 0 10px 0 10px;
+}
+
+/*
+  How do we get these percentages?
+  percentage = (n / 12) * 100
+*/
+
+/*.column-1 { width: 8.333%; }
 .column-2 { width: 16.66%; }
 .column-3 { width: 25%; }
 .column-4 { width: 33.33%; }
@@ -11,26 +71,12 @@
 .column-9 { width: 75%; }
 .column-10 { width: 83.33%; }
 .column-11 { width: 91.66%; }
-.column-12 { width: 100%; }
-.column {
-  float: left;
-  border: 2px solid Tomato;
-  border-radius: 20px;
-  text-align: center;
-}
+.column-12 { width: 100%; }*/
 
-.header > .column,
-.footer > .column {
-  padding: 25px;
-}
-.middle > .column {
-  height: 400px;
-  line-height: 400px;
-}
-.header ul {
-  margin: auto;
-}
-.header li {
-  display: inline-block;
-  list-style-type: none;
+
+@media only screen and (max-width: 480px) {
+	.column { 
+    /*margin: 1% 0 1% 0%;
+    width: 100%;*/
+  }	
 }
