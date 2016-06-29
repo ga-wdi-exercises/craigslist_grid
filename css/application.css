@@ -1,6 +1,6 @@
 /* By default, box-sizing is set to content-box */
 .row, .column {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 /* Let's add a border so we can see our rows better */
@@ -10,9 +10,9 @@
 
 /* clearfix */
 .row:after {
-  /*content: "";
+  content: "";
   display: table;
-  clear: both;*/
+  clear: both;
 }
 
 /* Let's add another border so we can see our columns better */
@@ -30,12 +30,12 @@
 
 .header > .column,
 .footer > .column {
-  /*padding: 25px;*/
+  padding: 25px;
 }
 
 .middle > .column {
-  /*height: 400px;
-  line-height: 400px;*/
+  height: 400px;
+  line-height: 400px;
 }
 
 .header ul {
@@ -43,7 +43,7 @@
 }
 
 .header li {
-  /*display: inline-block;*/
+  display: inline-block;
   list-style-type: none;
 }
 
@@ -60,7 +60,7 @@
   percentage = (n / 12) * 100
 */
 
-/*.column-1 { width: 8.333%; }
+.column-1 { width: 8.333%; }
 .column-2 { width: 16.66%; }
 .column-3 { width: 25%; }
 .column-4 { width: 33.33%; }
@@ -71,12 +71,12 @@
 .column-9 { width: 75%; }
 .column-10 { width: 83.33%; }
 .column-11 { width: 91.66%; }
-.column-12 { width: 100%; }*/
+.column-12 { width: 100%; }
 
 
 @media only screen and (max-width: 480px) {
 	.column { 
-    /*margin: 1% 0 1% 0%;
-    width: 100%;*/
+    margin: 1% 0 1% 0%;
+    width: 100%;
   }	
 }
